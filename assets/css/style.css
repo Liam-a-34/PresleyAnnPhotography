@@ -55,7 +55,7 @@ header{
 .full-view{
     height: 100vh;
     width: 100vw;
-    background-image: url("../assets/images/PresleyImage18.jpg");
+    background-image: url("../images/PresleyImage18.jpg");
     background-size: cover;
     background-position: -10%;
 }
