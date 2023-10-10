@@ -29,15 +29,49 @@
             <h4>Capturing Your Memories</h4>
             <h2 id="scroll-trigger">Portraits, Show Ring Photography & More</h2>
             <div class="images-nav-grid">
-                <div class="nav-grid-small"></div>
-                <div class="nav-grid-small"></div>
-                <div class="nav-grid-small"></div>
-                <div class="nav-grid-small"></div>
-                <div class="nav-grid-small"></div>
-                <div class="nav-grid-small"></div>
+                <div class="nav-grid nav-grid-small grid-img-center" style="background-image: url(/assets/images/PresleyImage4.jpg);">
+                    <h1>About</h1>
+                </div>
+                <div class="nav-grid nav-grid-small" style="background-image: url(/assets/images/PresleyImage12.jpg);">
+                    <h1>Services</h1>
+                </div>
+                <div class="nav-grid nav-grid-large1 grid-img-center" style="background-image: url(/assets/images/PresleyImage17.jpg);">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="nav-grid nav-grid-large2 grid-img-center" style="background-image: url(/assets/images/PresleyImage16.png);">
+                    <h1>Experience</h1>
+                </div>
+                <div class="nav-grid nav-grid-small " id="scroll-trigger2" style="background-image: url(/assets/images/PresleyImage19.png);">
+                    <h1>Pricing</h1>
+                </div>
+                <div class="nav-grid nav-grid-small" style="background-image: url(/assets/images/PresleyImage6.jpg);  background-position: 0px -30px">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-meet-banner">
+            <img src="/assets/images/PresleySmallPortrait.png"/>
+            <div class="meet-banner-content">
+                <h3>MEET PRESLEY ANN</h3>
+                <p>My photography sessions are all about capturing your personal flare in unique ways. I love to work with livestock and youth as well as families and couples to produce a dream gallery you can cherish for a lifetime. 
+                    To me photography is more about getting a good social media post - it's about capturing the joy and personality of memories that last forever.</p>
+                <a href="about.html">About</a>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p class="footer-credit">©2023 COPYRIGHT LIAM ALLEN</p>
+        <img class="footer-logo" src="/assets/images/PresleyAnnCursive.png"/>
+        <div class="footer-links">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/presley_ann_photography/"><img class="footer-icon" src="/assets/images/instagram (1).png"/></a>
+                <a href="https://www.facebook.com/presley.ann.photography.2020/"><img class="footer-icon" src="/assets/images/facebook-logo.png"/></a>
+                <a href="https://www.tiktok.com/@presley.ann.photo"><img class="footer-icon" src="/assets/images/tik-tok.png"/></a>
+            </div>
+            <a href="mailto:presleynoland@gmail.com" style="color: black">presleynoland@gmail.com</a>
+        </div>
+    </footer>
     
 </body>
 <script>
@@ -56,8 +90,11 @@ function isElementInViewport(el) {
 function addClassOnScroll() {
   const element = document.getElementById('scroll-up');
   const element2 = document.getElementById("scroll-trigger")
+  const element3 = document.getElementById("scroll-trigger2")
 
   if (isElementInViewport(element2)) {
+    element.classList.add('scroll-effect'); // Add your desired class
+  } else if (isElementInViewport(element3)) {
     element.classList.add('scroll-effect'); // Add your desired class
   }
 }
