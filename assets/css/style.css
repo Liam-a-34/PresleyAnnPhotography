@@ -223,7 +223,13 @@ header{
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    transition: all .5s ease;
+}
+
+.meet-banner-content a:hover{
+    background-color: #6e6e6e;
+    color: white;
 }
 
 footer{
