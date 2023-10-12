@@ -14,6 +14,13 @@ header{
     width: 100vw;
 }
 
+.relative-header{
+    position: relative;
+    top:  0;
+    margin-top: 50px;
+    margin-bottom: 150px
+}
+
 .header-nav{
     width: 80%;
     margin: auto;
@@ -23,7 +30,7 @@ header{
 }
 
 .header-link{
-    font-size: 22px;
+    font-size: 1.2vw;
     text-decoration: none;
     color: white;
     font-family: "Libre Baskerville", sans-serif;
@@ -55,7 +62,6 @@ header{
 .full-view{
     height: 100vh;
     width: 100vw;
-    background-image: url("../images/PresleyImage18.jpg");
     background-size: cover;
     background-position: -10%;
 }
@@ -232,6 +238,117 @@ header{
     color: white;
 }
 
+.info-card-large-cont{
+    width: 75vw;
+    height: calc(75vw * .5);
+    margin: auto;
+    margin-bottom: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.info-card-large-info{
+    background-color: white;
+    position: relative;
+    width: 40%;
+    padding-top: 40%;
+    margin-right:6%
+}
+
+.info-card-large-info > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-card-large-info h2{
+    font-size: 1.7vw;
+    font-family: "Libre Baskerville";
+    font-weight: normal;
+    color: #6e6e6e;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.seperator{
+    width: 1px;
+    height: 10%;
+    background-color: #6e6e6e;
+    margin: 0 25px;
+}
+
+
+.info-card-large-info p{
+    font-size: 1.4vw;
+    color: #6e6e6e;
+    text-align: center;
+    line-height: 2vw;
+    margin: 0 10% 10% 10%
+}
+
+.offset-collage{
+    width: auto;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.offset-column{
+    height: fit-content;
+    width: 20%;
+    margin: 1vw
+}
+
+.offset-item{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-top: 2vw
+}
+
+.offset-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.offset-column:nth-child(odd){
+    position: relative;
+    bottom: 5vw
+}
+
+
+
+
+.dark{
+    color: #6e6e6e
+}
+
+.dark:hover::after{
+    background-color: #6e6e6e;
+    opacity: 1;
+}
+
+.scroll-effect{
+    top: 0px;
+    opacity: 100%;
+}
+
 footer{
     height: 150px;
     background-color: rgb(206, 207, 211);
@@ -271,11 +388,3 @@ footer{
 }
 
 
-
-
-
-
-.scroll-effect{
-    top: 0px;
-    opacity: 100%;
-}
