@@ -9,8 +9,8 @@ html{
 
 header{
     position: absolute;
-    top: 50px;
-    height: 100px;
+    top: 5vh;
+    height: 10vh;
     width: 100vw;
 }
 
@@ -56,7 +56,7 @@ header{
 }
 
 .header-cam-logo{
-    width: 250px
+    width: 13vw
 }
 
 .full-view{
@@ -478,45 +478,72 @@ header{
     font-family: "Montserrat";
 }
 
-
-
-.cormorant{
-    font-family: "Cormorant Garamond";
+.contact-cont{
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.libre{
-    font-family: "Libre Baskerville";
+.contact-div{
+    width: 50%;
+    height: 100%;
 }
 
-.text-center{
-    text-align: center;
+.contact-div p{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    margin-bottom: 2vw
 }
 
-.normal{
-    font-weight: normal;
+.contact-div h2{
+    font-size: 1.8vw;
+    letter-spacing: .3vw;
+    margin-bottom: 1.5vw
 }
 
-.white{
-    color: white
+.contact-div:nth-child(even) p{
+    margin-bottom: 0;
+    font-size:.7vw;
+    letter-spacing: .2vw;
+    font-weight: bold;
 }
 
-.dark{
-    color: #6e6e6e
+.contact-div:nth-child(even){
+    text-align: right;
 }
 
-.black{
-    color: black
+.portfolio-main{
+    background-color: #f1f1f1;
+    padding-top: 18vw;
 }
 
-.dark:hover::after{
-    background-color: #6e6e6e;
-    opacity: 1;
+.portfolio-grid{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    padding-left: 2px;
+    
 }
 
-.scroll-effect{
-    top: 0px;
-    opacity: 100%;
+.portfolio-cell{
+    width: calc(20% - 4px);
+    height: fit-content;
+    margin: 2px 0;
 }
+
+
+
+
+
 
 footer{
     height: 150px;
@@ -554,6 +581,59 @@ footer{
 
 .footer-icon:hover{
     filter: invert(1);
+}
+
+.bg-move{
+    background-position: center 15%;
+}
+
+.cormorant{
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+}
+
+.libre{
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.img-white{
+    filter: invert(1);
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0 .5vw;
+}
+
+.white{
+    color: white
+}
+
+.dark{
+    color: #6e6e6e
+}
+
+.black{
+    color: black
+}
+
+.dark:hover::after{
+    background-color: #6e6e6e;
+    opacity: 1;
+}
+
+.scroll-effect{
+    top: 0px;
+    opacity: 100%;
 }
 
 
