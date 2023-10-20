@@ -527,18 +527,21 @@ header{
     width: 80vw;
     height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0 10vw;
-    padding-left: 2px;
     
 }
 
-.portfolio-cell{
-    width: calc(20% - 4px);
-    height: fit-content;
-    margin: 2px 0;
+.portfolio-column{
+    flex: 1;
+    margin: 0 2px
 }
+
+.portfolio-cell{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
 
 
 
