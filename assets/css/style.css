@@ -18,7 +18,7 @@ header{
     position: relative;
     top:  0;
     margin-top: 50px;
-    margin-bottom: 150px
+    margin-bottom: 8vw
 }
 
 .header-nav{
@@ -59,11 +59,25 @@ header{
     width: 13vw
 }
 
+.mobile-header{
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.mobile-toggle{
+    opacity: 0;
+}
+
+.mobile-logo{
+    opacity: 0;
+}
+
 .full-view{
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    background-position: -10%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .full-view-credit{
@@ -71,7 +85,7 @@ header{
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 1vw;
     font-family: "Libre Baskerville";
     letter-spacing: .4rem;
     color: white
@@ -87,23 +101,23 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 10vw;
 }
 
 .images-nav-grid-cont h4{
-    font-size: 15px;
-    letter-spacing: .5rem;
+    font-size: 1vw;
+    letter-spacing: .5vw;
     color: rgb(78, 78, 78);
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    margin-top: 100px;
+    margin-top: 5vw;
 }
 
 .images-nav-grid-cont h2{
-    margin: 30px 0 50px 0;
+    margin: 1vw 0 2vw 0;
     text-wrap: nowrap;
-    font-size: 30px;
-    letter-spacing: .3rem;
+    font-size: 1.3vw;
+    letter-spacing: .5vw;
     color: rgb(78, 78, 78);
     font-family: "Libre Baskerville", sans-serif;
     font-weight: 300;
@@ -111,19 +125,19 @@ header{
 
 .images-nav-grid{
     width: 80%;
-    height: 90%;
+    height: 80vw;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
 }
 
 .images-nav-grid-cont:after{
     content: "";
     width: 80%;
     position: absolute;
-    bottom: -150px;
+    bottom: -5vw;
     left: 50%;
     transform: translateX(-50%);
     height: 1px;
@@ -166,7 +180,7 @@ header{
 }
 
 .nav-grid h1{
-    font-size: 35px;
+    font-size: 1.6vw;
     color: white;
     font-family: "Libre Baskerville", sans-serif;
     font-weight: normal;
@@ -187,12 +201,16 @@ header{
     padding: 50px 100px;
     background-color: #f1f1f1;
     color: #6e6e6e;
-    width: 1200px;
+    width: 60%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10vw;
     margin-top: 0;
     display: flex;
     justify-content: space-around;
+}
+
+.main-meet-banner img{
+    width: 15vw
 }
 
 .meet-banner-content{
@@ -204,28 +222,28 @@ header{
 }
 
 .meet-banner-content h3{
-    font-size: 30px;
+    font-size: 1.5vw;
     font-family: "Montseratt", sans-serif;
     font-weight: normal;
-    letter-spacing: .3rem;
+    letter-spacing: .5vw;
 }
 
 .meet-banner-content p{
-    font-size: 18px;
+    font-size: .8vw;
     font-family: "Libre Baskerville", sans-serif;
-    line-height: 30px;
+    line-height: 1.3vw
 }
 
 .meet-banner-content a{
-    height: 120px;
-    width: 120px;
+    height: 5vw;
+    width: 5vw;
     margin: 25px auto 0 auto;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    font-size: 22px;
+    font-size: 1vw;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
     text-decoration: none;
@@ -584,6 +602,119 @@ footer{
 
 .footer-icon:hover{
     filter: invert(1);
+}
+
+@media screen and (max-width: 1200px){
+    .header-link{
+        letter-spacing: 1vw;
+    }
+
+    .images-nav-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 100vh;
+    }
+
+    .nav-grid-large{
+        grid-row: span 2;
+    }
+
+    .nav-grid-large1 h1{
+        font-size: 30px
+    }
+    
+    .nav-grid-large2 h1{
+        font-size: 30px
+    }
+
+    .main-meet-banner{
+        padding: 5vw 10vw
+    }
+
+    .meet-banner-content a{
+        margin-top: 1vw
+    }
+
+    .footer-logo{
+        height: auto;
+        width: 20vw
+    }
+
+    .footer-icon{
+        width: 2vw;
+        height: 2vw;
+        margin: 0 1vw
+    }
+
+    .footer-links{
+        font-size: 1.2vw;
+    }
+
+    .footer-credit{
+        font-size: 1.2vw
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .header-nav{
+        opacity: 0;
+    }
+
+    .mobile-toggle{
+        position: absolute;
+        right: 5vw;
+        top: 5vw;
+        font-size: 5vw;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        opacity: 1;
+        transition: all .5s ease;
+    }
+
+    .mobile-logo{
+        position: absolute;
+        top: -1vw;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    .header-cam-logo{
+        opacity: 1;
+        width: 30vw
+    }
+
+
+    .active-mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+        background-color: #f1f1f1;
+    }
+
+    .toggle-move{
+        top: -3vh;
+        color: black;
+        z-index: 200;
+        font-size: 5vw;
+    }
+
+    .mobile-header .header-link{
+        font-size: 2.5vw;
+        color: black;
+        text-align: center;
+        padding: 4vw 0;
+        border-bottom: 1px solid grey;
+        width: 100%
+    }
 }
 
 .bg-move{
