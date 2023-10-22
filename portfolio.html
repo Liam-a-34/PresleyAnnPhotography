@@ -10,7 +10,8 @@
         <title>Portfolio | Presley Ann Photography</title>
     </head>
 <body>
-    <header>
+    <a class="mobile-toggle black">Menu</a>
+    <header class="relative-header">
         <nav class="header-nav">
             <a class="header-link dark" href="./about.html">About</a>
             <a class="header-link dark" href="./experience.html">Experience</a>
@@ -19,6 +20,16 @@
             </a>
             <a class="header-link dark" href="./portfolio.html">Portfolio</a>
             <a class="header-link dark" href="./contact.html">Contact</a>
+        </nav>
+
+        <a class="mobile-logo" href="./index.html">
+            <img class="header-cam-logo" src="./assets/images/PresleyCamLogoWhiteClean.png" />
+        </a>
+        <nav class="mobile-header">
+            <a class="header-link" href="./about.html">About</a>
+            <a class="header-link" href="./experience.html">Experience</a>
+            <a class="header-link" href="./portfolio.html">Portfolio</a>
+            <a class="header-link" href="./contact.html">Contact</a>
         </nav>
     </header>
     <main class="portfolio-main">
@@ -126,4 +137,12 @@
     </footer>
     
 </body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(".mobile-toggle").on("click", function(){
+        $(".mobile-header").toggleClass("active-mobile")
+        $(".mobile-toggle").toggleClass("toggle-move")
+    })
+</script>
 </html>

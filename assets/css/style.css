@@ -7,6 +7,10 @@ html{
     overflow-x: hidden;
 }
 
+body{
+    margin: 0;
+}
+
 header{
     position: absolute;
     top: 5vh;
@@ -70,6 +74,7 @@ header{
 
 .mobile-logo{
     opacity: 0;
+    position: absolute;
 }
 
 .full-view{
@@ -295,7 +300,7 @@ header{
     color: #6e6e6e;
     letter-spacing: .3rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5vw;
 }
 
 .seperator{
@@ -538,7 +543,7 @@ header{
 
 .portfolio-main{
     background-color: #f1f1f1;
-    padding-top: 18vw;
+    padding-top: 5vw
 }
 
 .portfolio-grid{
@@ -604,6 +609,59 @@ footer{
     filter: invert(1);
 }
 
+.img-white{
+    filter: invert(1);
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0 .5vw;
+}
+
+.bg-move{
+    background-position: center 15%;
+}
+
+.cormorant{
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+}
+
+.libre{
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+.white{
+    color: white
+}
+
+.dark{
+    color: #6e6e6e
+}
+
+.black{
+    color: black
+}
+
+.dark:hover::after{
+    background-color: #6e6e6e;
+    opacity: 1;
+}
+
+.scroll-effect{
+    top: 0px;
+    opacity: 100%;
+}
+
 @media screen and (max-width: 1200px){
     .header-link{
         letter-spacing: 1vw;
@@ -663,13 +721,15 @@ footer{
 
     .mobile-toggle{
         position: absolute;
-        right: 5vw;
-        top: 5vw;
+        right: 0;
+        top: 0;
         font-size: 5vw;
         font-family: "Montserrat", sans-serif;
         color: white;
         opacity: 1;
         transition: all .5s ease;
+        padding: 4vw;
+        z-index: 500;
     }
 
     .mobile-logo{
@@ -690,7 +750,6 @@ footer{
         position: fixed;
         top: 0;
         left: 0;
-        opacity: 1;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -698,13 +757,14 @@ footer{
         align-items: center;
         z-index: 100;
         background-color: #f1f1f1;
+        opacity: 1;
     }
 
     .toggle-move{
-        top: -3vh;
         color: black;
         z-index: 200;
         font-size: 5vw;
+        top: -6vh
     }
 
     .mobile-header .header-link{
@@ -715,59 +775,37 @@ footer{
         border-bottom: 1px solid grey;
         width: 100%
     }
+
+    .contact-cont{
+        flex-direction: column;
+    }
+
+    .contact-div{
+        width: 100%;
+        margin: 0 0 5vw 0
+    }
+
+    .contact-div p{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .contact-div:nth-child(even) p{
+        font-size: 1.5vw;
+        letter-spacing: .5vw;
+    }
+
+    .contact-div h2{
+        font-size: 4vw;
+        letter-spacing: .7vw
+    }
+
+    .img-white{
+        width: 4vw;
+        height: 4vw;
+        margin: 0 1vw
+    }
 }
 
-.bg-move{
-    background-position: center 15%;
-}
-
-.cormorant{
-    font-family: "Cormorant Garamond", sans-serif;
-}
-
-.montserrat{
-    font-family: "Montserrat", sans-serif;
-}
-
-.libre{
-    font-family: "Libre Baskerville", sans-serif;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.normal{
-    font-weight: normal;
-}
-
-.img-white{
-    filter: invert(1);
-    height: 1.5vw;
-    width: 1.5vw;
-    margin: 0 .5vw;
-}
-
-.white{
-    color: white
-}
-
-.dark{
-    color: #6e6e6e
-}
-
-.black{
-    color: black
-}
-
-.dark:hover::after{
-    background-color: #6e6e6e;
-    opacity: 1;
-}
-
-.scroll-effect{
-    top: 0px;
-    opacity: 100%;
-}
 
 

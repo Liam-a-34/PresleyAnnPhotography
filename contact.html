@@ -20,6 +20,18 @@
             <a class="header-link" href="./portfolio.html">Portfolio</a>
             <a class="header-link" href="./contact.html">Contact</a>
         </nav>
+
+
+        <a class="mobile-logo" href="./index.html">
+            <img class="header-cam-logo" src="./assets/images/PresleyCamLogoWhiteClean.png" />
+        </a>
+        <a class="mobile-toggle">Menu</a>
+        <nav class="mobile-header">
+            <a class="header-link" href="./about.html">About</a>
+            <a class="header-link" href="./experience.html">Experience</a>
+            <a class="header-link" href="./portfolio.html">Portfolio</a>
+            <a class="header-link" href="./contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <div class="full-view bg-move" style="background-image: url(./assets/images/PresleyImage36\ \(1\).jpg);">
@@ -53,6 +65,13 @@
             <a href="mailto:presleynoland@gmail.com" style="color: black">presleynoland@gmail.com</a>
         </div>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(".mobile-toggle").on("click", function(){
+        $(".mobile-header").toggleClass("active-mobile")
+        $(".mobile-toggle").toggleClass("toggle-move")
+    })
+</script>
 </body>
+
 </html>
