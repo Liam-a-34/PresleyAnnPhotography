@@ -772,6 +772,10 @@ footer{
         width: 100%
     }
 
+    .mobile-header .header-link:hover{
+        text-decoration: none;
+    }
+
     .contact-cont{
         flex-direction: column;
     }
