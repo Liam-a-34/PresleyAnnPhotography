@@ -648,10 +648,6 @@ footer{
     color: #6e6e6e
 }
 
-.black{
-    color: black
-}
-
 .dark:hover::after{
     background-color: #6e6e6e;
     opacity: 1;
@@ -805,6 +801,10 @@ footer{
         height: 4vw;
         margin: 0 1vw
     }
+}
+
+.black{
+    color: black
 }
 
 
