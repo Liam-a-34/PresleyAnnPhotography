@@ -643,7 +643,8 @@ footer{
 
 .footer-socials{
     margin-top: 15px;
-    fle-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-icon{
