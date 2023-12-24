@@ -642,9 +642,9 @@ footer{
 }
 
 .footer-socials{
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
 }
 
 .footer-icon{
