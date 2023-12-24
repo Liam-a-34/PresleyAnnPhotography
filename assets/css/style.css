@@ -577,6 +577,10 @@ header{
     margin-bottom: 1.5vw
 }
 
+.contact-div .footer-socials{
+  justify-content: right;
+}
+
 .contact-div:nth-child(even) p{
     margin-bottom: 0;
     font-size:.7vw;
