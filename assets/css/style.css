@@ -722,6 +722,15 @@ footer{
         height: 100vh;
     }
 
+  .images-nav-grid-cont h4{
+    font-size: 1.5vw;
+
+}
+
+.images-nav-grid-cont h2{
+    font-size: 1.7vw;
+}
+
     .nav-grid-large{
         grid-row: span 2;
     }
