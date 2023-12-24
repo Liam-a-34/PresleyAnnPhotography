@@ -824,6 +824,10 @@ footer{
         text-decoration: none;
     }
 
+  .meet-banner-content p{
+    font-size: 1vw
+  }
+
     .contact-cont{
         flex-direction: column;
     }
