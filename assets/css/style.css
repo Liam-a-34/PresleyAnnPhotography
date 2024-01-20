@@ -232,7 +232,7 @@ header{
 }
 
 .nav-grid h1{
-    font-size: 1.6vw;
+    font-size: 2vw;
     color: white;
     font-family: "Libre Baskerville", sans-serif;
     font-weight: normal;
@@ -577,6 +577,10 @@ header{
     margin-bottom: 1.5vw
 }
 
+.contact-div .footer-socials{
+  justify-content: right;
+}
+
 .contact-div:nth-child(even) p{
     margin-bottom: 0;
     font-size:.7vw;
@@ -642,6 +646,8 @@ footer{
 }
 
 .footer-socials{
+    display: flex;
+    flex-direction: row;
     margin-top: 15px;
 }
 
@@ -716,6 +722,14 @@ footer{
         height: 100vh;
     }
 
+  .images-nav-grid-cont h4{
+    font-size: 1.5vw;
+}
+
+.images-nav-grid-cont h2{
+    font-size: 1.7vw;
+}
+
     .nav-grid-large{
         grid-row: span 2;
     }
@@ -729,7 +743,8 @@ footer{
     }
 
     .main-meet-banner{
-        padding: 5vw 10vw
+        padding: 5vw 10vw;
+        width: 80%
     }
 
     .meet-banner-content a{
@@ -822,6 +837,10 @@ footer{
     .mobile-header .header-link:hover{
         text-decoration: none;
     }
+
+  .meet-banner-content p{
+    font-size: 1vw
+  }
 
     .contact-cont{
         flex-direction: column;
